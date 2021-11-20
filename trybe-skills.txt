@@ -4,6 +4,4 @@ O que vou aprender na Trybe:
 - Git
 - HTML
 - CSS
-trybe-skills-updates
 - JavaScript
-master
