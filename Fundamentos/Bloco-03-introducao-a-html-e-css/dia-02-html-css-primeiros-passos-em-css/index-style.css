@@ -1,0 +1,12 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+}
+ul {
+    background-color: rgb(68, 62, 62);
+    color: white;
+}
+.cor-background {
+    background-color: rgb(146, 21, 104);
+    color: white;
+}
