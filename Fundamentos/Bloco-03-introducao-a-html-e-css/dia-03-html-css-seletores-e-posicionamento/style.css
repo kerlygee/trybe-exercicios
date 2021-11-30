@@ -2,3 +2,20 @@
     background-color: yellow;
     text-transform: uppercase;
 }
+
+.font-style {
+    color: red;
+}
+
+#font-style {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+.negrito {
+    font-weight: bold;
+}
