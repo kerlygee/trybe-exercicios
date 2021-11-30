@@ -19,3 +19,11 @@ li {
 .negrito {
     font-weight: bold;
 }
+
+.font-color-list {
+    color: blue;
+}
+
+.background {
+    background-color: pink;
+}
