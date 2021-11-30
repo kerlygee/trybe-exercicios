@@ -27,3 +27,27 @@ li {
 .background {
     background-color: pink;
 }
+
+#stackoverflow:hover {
+    background-color: orange;
+}
+
+#w3schools:hover {
+    background-color: green;
+}
+
+#developer:hover {
+    background-color: black;
+}
+
+#devdocs:hover {
+    background-color: yellow;
+}
+
+#betrybe:hover {
+    background-color: green;
+}
+
+.list-active:active {
+    font-weight: bold;
+}
