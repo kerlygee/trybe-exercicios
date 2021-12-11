@@ -17,5 +17,7 @@ function alteraCor(elemento, cor){
     }
   }
   alteraCor2(".no-emergency-tasks h3");
+  let footer = document.getElementById("footer-container");
+  footer.style.backgroundColor = "darkgreen"
 
 
