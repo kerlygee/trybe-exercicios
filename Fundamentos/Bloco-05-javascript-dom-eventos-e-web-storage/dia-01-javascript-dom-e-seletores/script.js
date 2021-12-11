@@ -10,5 +10,12 @@ function alteraCor(elemento, cor){
   }
   }
   alteraCor(".emergency-tasks h3","")
+  function alteraCor2(elemento, cor){
+    let title2 = document.querySelectorAll(elemento);
+    for (let i=0; i< title2.length; i +=1){
+      title2[i].style.backgroundColor = "black";
+    }
+  }
+  alteraCor2(".no-emergency-tasks h3");
 
 
