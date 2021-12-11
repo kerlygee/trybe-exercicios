@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class = "paragraph"id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class = "paragraph" id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById("page-title").innerText = "10 coisas que eu odeio em você";
+      document.getElementById("paragraph").innerText = "É um dos meus filmes favoritos.";
+      document.getElementById("subtitle").innerText = "Outros filmes";
+      document.getElementById("second-paragraph").innerText = "Todos da Marvel; Piratas do Caribe...etc."
+      const paragraph2 = document.getElementsByClassName("paragraph");
+      for(let i =0; i < paragraph2.length; i +=1){
+        paragraph2[0].innerText = "O auto da Compadecida"
+      }
+      const paragraphstyle = document.getElementsByClassName("paragraph")[0];
+      paragraphstyle.style.color = "orange";
+      const subtitle = document.getElementsByTagName("h4")[0];
+    subtitle.style.color = "purple";
+    </script>
+  </body>
+</html>
