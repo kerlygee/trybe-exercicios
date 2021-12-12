@@ -75,9 +75,10 @@
      function imprimeElemento(){
      let paragraph = document.getElementsByTagName("p");
      for (let i=0; i < paragraph.length; i +=1){
-       console.log(paragraph[i])
+       console.log(paragraph[i].innerText);
      }
     }
+    imprimeElemento()
       /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
