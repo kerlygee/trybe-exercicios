@@ -63,10 +63,10 @@
        createTagH1.innerText= 'Exercício 5.2 - JavaScript DOM';
        getBody.appendChild(createTagH1);
       }
-      addH1ToBody()
 
+      addH1ToBody()
+      const createMain = document.createElement('main');
       function addMainToBody() {
-        const createMain = document.createElement('main');
       createMain.className = 'main-content'
       getBody.appendChild(createMain);
       }
@@ -85,6 +85,14 @@
        getSection.appendChild(createElementP);
      }
      addTagPToSection()
+
+     function addSecondSectionToMain() {
+       const getMain = document.querySelector('main');
+       const createSection = document.createElement('section');
+       createSection.className= 'left-content';
+      getMain.appendChild(createSection);
+     }
+     addSecondSectionToMain()
     </script>
   </body>
 </html>
