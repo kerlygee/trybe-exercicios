@@ -86,13 +86,21 @@
      }
      addTagPToSection()
 
-     function addSecondSectionToMain() {
+     function addLeftSectionToMain() {
        const getMain = document.querySelector('main');
        const createSection = document.createElement('section');
        createSection.className= 'left-content';
       getMain.appendChild(createSection);
      }
-     addSecondSectionToMain()
+     addLeftSectionToMain()
+
+     function addRigthSectionToMain() {
+      const getMain = document.querySelector('main');
+       const createSection = document.createElement('section');
+       createSection.className= 'rigth-content';
+       getMain.appendChild(createSection);
+     }
+     addRigthSectionToMain()
     </script>
   </body>
 </html>
