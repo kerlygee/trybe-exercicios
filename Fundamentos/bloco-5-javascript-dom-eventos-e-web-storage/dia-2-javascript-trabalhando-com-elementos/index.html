@@ -57,13 +57,34 @@
   </head>
   <body>
     <script>
+      const getBody = document.querySelector('body');
       function addH1ToBody(){
-       const body = document.querySelector('body');
        const createTagH1 = document.createElement('h1');
        createTagH1.innerText= 'Exercício 5.2 - JavaScript DOM';
-       body.appendChild(createTagH1);
+       getBody.appendChild(createTagH1);
       }
-      addH1ToBody();
+      addH1ToBody()
+
+      function addMainToBody() {
+        const createMain = document.createElement('main');
+      createMain.className = 'main-content'
+      getBody.appendChild(createMain);
+      }
+      addMainToBody()
+
+      function addSectionToMain() {
+        const getMain = document.querySelector('main');
+        const createSection = document.createElement('section');
+        createSection.className = 'center-content';
+        getMain.appendChild(createSection);
+      }
+      addSectionToMain()
+     function addTagPToSection() {
+       const getSection = document.querySelector('section');
+       const createElementP = document.createElement('p');
+       getSection.appendChild(createElementP);
+     }
+     addTagPToSection()
     </script>
   </body>
 </html>
