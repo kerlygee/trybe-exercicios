@@ -71,6 +71,14 @@
       getBody.appendChild(createMain);
     }
     addMainToBody()
+
+    function addSectionToMain() {
+      const getMain = document.querySelector('main');
+      const createSection = document.createElement('section');
+      createSection.className = 'center-content';
+      getMain.appendChild(createSection);
+    }
+    addSectionToMain()
     </script>
   </body>
 </html>
