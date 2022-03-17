@@ -160,6 +160,15 @@
       elementPai.style.backgroundColor = 'green'
     }
     changeBackgroundCollor()
+
+    function removeTheLastListItem() {
+      const ul = document.querySelector('ul');
+      const li = document.querySelectorAll('li')
+      ul.removeChild(li[8]);
+      ul.removeChild(li[9]);
+      
+    }
+    removeTheLastListItem()
   </script>
 </body>
 
