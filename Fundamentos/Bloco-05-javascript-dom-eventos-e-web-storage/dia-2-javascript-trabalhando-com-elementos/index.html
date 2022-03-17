@@ -81,7 +81,7 @@
       const main = document.querySelector('main');
       const section = document.createElement('section');
       section.className = 'center-content';
-      main.appendChild(createSection);
+      main.appendChild(section);
     }
     addSectionToMain()
 
@@ -169,19 +169,24 @@
     removeSection()
 
     // Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+    function centerSection() {
+      const section = document.querySelector('.center-content');
+      section.style.marginRight = 'auto';
+    }
+    centerSection()
 
     // Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
     function changeBackgroundCollor() {
-      const section = document.querySelector('.center-content')
+      const section = document.querySelector('.center-content');
       const parentNod = section.parentNode;
-      parentNod.style.backgroundColor = 'green'
+      parentNod.style.backgroundColor = 'green';
     }
     changeBackgroundCollor()
 
     //Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
     function removeTheLastListItem() {
       const ul = document.querySelector('ul');
-      const li = document.querySelectorAll('li')
+      const li = document.querySelectorAll('li');
       ul.removeChild(li[8]);
       ul.removeChild(li[9]);
 
