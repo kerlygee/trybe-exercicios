@@ -117,7 +117,7 @@
       const getSection = document.querySelector('.right-content');
       const ul = document.createElement('ul');
       const numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-      numbers.map((n) => {
+      numbers.forEach((n) => {
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(n));
         ul.appendChild(li);
@@ -125,6 +125,16 @@
       getSection.appendChild(ul);
     }
     addList();
+
+    function addH3ToMain() {
+      const getMain = document.querySelector('main');
+    for(let i=1; i <=3; i+=1) {
+      const h3 = document.createElement('h3');
+      h3.innerHTML= i;
+      getMain.appendChild(h3);
+    }
+    }
+    addH3ToMain()
   </script>
 </body>
 
