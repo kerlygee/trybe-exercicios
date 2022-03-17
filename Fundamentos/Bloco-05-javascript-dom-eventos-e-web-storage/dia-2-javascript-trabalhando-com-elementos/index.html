@@ -64,6 +64,13 @@
       getBody.appendChild(createTagH1);
     }
     addH1ToBody()
+
+    const createMain = document.createElement('main');
+    function addMainToBody() {
+      createMain.className = 'main-content'
+      getBody.appendChild(createMain);
+    }
+    addMainToBody()
     </script>
   </body>
 </html>
