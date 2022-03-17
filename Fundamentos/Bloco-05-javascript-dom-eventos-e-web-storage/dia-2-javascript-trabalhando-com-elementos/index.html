@@ -134,6 +134,16 @@
       }
     }
     addH3ToMain()
+
+    function addClass() {
+      const h3 = document.querySelectorAll('h3');
+      const h1 = document.querySelector('h1');
+      h1.className='title'
+      for (let i = 0; i < 3; i += 1) {
+        h3[i].className = 'description'
+      }
+    }
+    addClass()
     </script>
   </body>
 </html>
