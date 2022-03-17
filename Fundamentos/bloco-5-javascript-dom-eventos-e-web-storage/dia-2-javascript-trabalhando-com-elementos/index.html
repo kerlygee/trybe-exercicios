@@ -62,7 +62,6 @@
     const getBody = document.querySelector('body');
     function addH1ToBody() {
       const createTagH1 = document.createElement('h1');
-      createTagH1.className = 'title'
       createTagH1.innerText = 'Exercício 5.2 - JavaScript DOM';
       getBody.appendChild(createTagH1);
     }
@@ -129,14 +128,31 @@
 
     function addH3ToMain() {
       const getMain = document.querySelector('main');
-    for(let i=1; i <=3; i+=1) {
-      const h3 = document.createElement('h3');
-      h3.className='description';
-      h3.innerHTML= i;
-      getMain.appendChild(h3);
-    }
+      for (let i = 1; i <= 3; i += 1) {
+        const h3 = document.createElement('h3');
+        h3.innerHTML = i;
+        getMain.appendChild(h3);
+      }
     }
     addH3ToMain()
+
+    function addClass() {
+      const h3 = document.querySelectorAll('h3');
+      const h1 = document.querySelector('h1');
+      h1.className='title'
+      for (let i = 0; i < 3; i += 1) {
+        h3[i].className = 'description'
+      }
+    }
+    addClass()
+
+    function removeSection() {
+      const main = document.querySelector('main');
+      const sectionLeft = document.querySelector('.left-content');
+
+      main.removeChild(sectionLeft);
+    }
+    removeSection()
   </script>
 </body>
 
