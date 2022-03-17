@@ -94,6 +94,14 @@
       getMain.appendChild(createSection);
     }
     addLeftSectionToMain()
+
+    function addRigthSectionToMain() {
+      const getMain = document.querySelector('main');
+      const createSection = document.createElement('section');
+      createSection.className = 'right-content';
+      getMain.appendChild(createSection);
+    }
+    addRigthSectionToMain()
     </script>
   </body>
 </html>
