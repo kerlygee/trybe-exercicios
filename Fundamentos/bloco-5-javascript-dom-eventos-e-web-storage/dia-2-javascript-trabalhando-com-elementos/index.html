@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: yellow;
+    }
+
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
+
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    const getBody = document.querySelector('body');
+    function addH1ToBody() {
+      const createTagH1 = document.createElement('h1');
+      createTagH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      getBody.appendChild(createTagH1);
+    }
+
+    addH1ToBody()
+    const createMain = document.createElement('main');
+    function addMainToBody() {
+      createMain.className = 'main-content'
+      getBody.appendChild(createMain);
+    }
+    addMainToBody()
+
+    function addSectionToMain() {
+      const getMain = document.querySelector('main');
+      const createSection = document.createElement('section');
+      createSection.className = 'center-content';
+      getMain.appendChild(createSection);
+    }
+    addSectionToMain()
+    function addTagPToSection() {
+      const getSection = document.querySelector('section');
+      const createElementP = document.createElement('p');
+      getSection.appendChild(createElementP);
+    }
+    addTagPToSection()
+
+    function addLeftSectionToMain() {
+      const getMain = document.querySelector('main');
+      const createSection = document.createElement('section');
+      createSection.className = 'left-content';
+      getMain.appendChild(createSection);
+    }
+    addLeftSectionToMain()
+
+    function addRigthSectionToMain() {
+      const getMain = document.querySelector('main');
+      const createSection = document.createElement('section');
+      createSection.className = 'right-content';
+      getMain.appendChild(createSection);
+    }
+    addRigthSectionToMain()
+
+    function addImage() {
+      const getSection = document.querySelector('.left-content');
+      const createElementImage = document.createElement('img');
+      createElementImage.src = 'https://picsum.photos/200';
+      createElementImage.className = 'small-image';
+      getSection.appendChild(createElementImage);
+    }
+    addImage();
+
+    function addList() {
+      const getSection = document.querySelector('.right-content');
+      const ul = document.createElement('ul');
+      const numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      numbers.forEach((n) => {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(n));
+        ul.appendChild(li);
+      })
+      getSection.appendChild(ul);
+    }
+    addList();
+
+    function addH3ToMain() {
+      const getMain = document.querySelector('main');
+      for (let i = 1; i <= 3; i += 1) {
+        const h3 = document.createElement('h3');
+        h3.innerHTML = i;
+        getMain.appendChild(h3);
+      }
+    }
+    addH3ToMain()
+
+    function addClass() {
+      const h3 = document.querySelectorAll('h3');
+      const h1 = document.querySelector('h1');
+      h1.className='title'
+      for (let i = 0; i < 3; i += 1) {
+        h3[i].className = 'description'
+      }
+    }
+    addClass()
+
+    function removeSection() {
+      const main = document.querySelector('main');
+      const sectionLeft = document.querySelector('.left-content');
+
+      main.removeChild(sectionLeft);
+    }
+    removeSection()
+
+    function changeBackgroundCollor() {
+      const sectionCenter = document.querySelector('.center-content')
+      const elementPai = sectionCenter.parentNode;
+      elementPai.style.backgroundColor = 'green'
+    }
+    changeBackgroundCollor()
+
+    function removeTheLastListItem() {
+      const ul = document.querySelector('ul');
+      const li = document.querySelectorAll('li')
+      ul.removeChild(li[8]);
+      ul.removeChild(li[9]);
+      
+    }
+    removeTheLastListItem()
+  </script>
+</body>
+
+</html>
