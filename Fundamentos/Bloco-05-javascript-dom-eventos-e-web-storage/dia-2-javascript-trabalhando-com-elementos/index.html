@@ -86,6 +86,14 @@
       getSection.appendChild(createElementP);
     }
     addTagPToSection()
+
+    function addLeftSectionToMain() {
+      const getMain = document.querySelector('main');
+      const createSection = document.createElement('section');
+      createSection.className = 'left-content';
+      getMain.appendChild(createSection);
+    }
+    addLeftSectionToMain()
     </script>
   </body>
 </html>
