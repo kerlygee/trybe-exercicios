@@ -111,6 +111,19 @@
       getSection.appendChild(createElementImage);
     }
     addImage();
+
+    function addList() {
+      const getSection = document.querySelector('.right-content');
+      const ul = document.createElement('ul');
+      const numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      numbers.forEach((n) => {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(n));
+        ul.appendChild(li);
+      })
+      getSection.appendChild(ul);
+    }
+    addList();
     </script>
   </body>
 </html>
