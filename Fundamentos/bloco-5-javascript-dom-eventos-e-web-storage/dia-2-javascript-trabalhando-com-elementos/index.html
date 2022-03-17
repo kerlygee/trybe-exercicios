@@ -101,6 +101,15 @@
        getMain.appendChild(createSection);
      }
      addRigthSectionToMain()
+
+     function addImage() {
+       const getSection = document.querySelector('.left-content');
+       const createElementImage = document.createElement('img');
+       createElementImage.src ='https://picsum.photos/200';
+       createElementImage.className = 'small-image';
+       getSection.appendChild(createElementImage);
+     }
+     addImage();
     </script>
   </body>
 </html>
