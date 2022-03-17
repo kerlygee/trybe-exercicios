@@ -144,6 +144,14 @@
       }
     }
     addClass()
+
+    function removeSection() {
+      const main = document.querySelector('main');
+      const sectionLeft = document.querySelector('.left-content');
+
+      main.removeChild(sectionLeft);
+    }
+    removeSection()
     </script>
   </body>
 </html>
